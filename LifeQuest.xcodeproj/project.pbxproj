@@ -12,9 +12,28 @@
 		6383D4C915487E3200B1F970 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6383D4C815487E3200B1F970 /* CoreGraphics.framework */; };
 		6383D4CF15487E3200B1F970 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6383D4CD15487E3200B1F970 /* InfoPlist.strings */; };
 		6383D4D115487E3200B1F970 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4D015487E3200B1F970 /* main.m */; };
-		6383D4D515487E3200B1F970 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4D415487E3200B1F970 /* AppDelegate.m */; };
-		6383D4D815487E3200B1F970 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6383D4D615487E3200B1F970 /* MainStoryboard.storyboard */; };
-		6383D4DB15487E3200B1F970 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4DA15487E3200B1F970 /* ViewController.m */; };
+		6383D4E215487E7B00B1F970 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6383D4E115487E7B00B1F970 /* MainStoryboard.storyboard */; };
+		6383D4E715487EA500B1F970 /* ActAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4E615487EA500B1F970 /* ActAppDelegate.m */; };
+		6383D4EA15487EB800B1F970 /* ActAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4E915487EB800B1F970 /* ActAddTaskViewController.m */; };
+		6383D4F115487ECC00B1F970 /* ActDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4EC15487ECC00B1F970 /* ActDetailViewController.m */; };
+		6383D4F215487ECC00B1F970 /* ActMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4EE15487ECC00B1F970 /* ActMainViewController.m */; };
+		6383D4F315487ECC00B1F970 /* ActMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4F015487ECC00B1F970 /* ActMasterViewController.m */; };
+		6383D4FF15487F1500B1F970 /* ActDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4F615487F1500B1F970 /* ActDataController.m */; };
+		6383D50015487F1500B1F970 /* ActLocalScoreFill.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4F815487F1500B1F970 /* ActLocalScoreFill.m */; };
+		6383D50115487F1500B1F970 /* ActOneOffTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4FA15487F1500B1F970 /* ActOneOffTask.m */; };
+		6383D50215487F1500B1F970 /* ActScoreContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4FC15487F1500B1F970 /* ActScoreContainer.m */; };
+		6383D50315487F1500B1F970 /* ActTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4FE15487F1500B1F970 /* ActTask.m */; };
+		6383D50615487F4500B1F970 /* TimerCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6383D50515487F4500B1F970 /* TimerCircle.png */; };
+		6383D50815487F4D00B1F970 /* ActuatorIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6383D50715487F4D00B1F970 /* ActuatorIcon.png */; };
+		6383D50A15487F5500B1F970 /* ActBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 6383D50915487F5500B1F970 /* ActBackground.png */; };
+		6383D51415487F9100B1F970 /* ActCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D50F15487F9100B1F970 /* ActCommon.m */; };
+		6383D51515487F9100B1F970 /* ActCustomCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D51115487F9100B1F970 /* ActCustomCellView.m */; };
+		6383D51615487F9100B1F970 /* ActCustomHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D51315487F9100B1F970 /* ActCustomHeader.m */; };
+		6383D52015487FBF00B1F970 /* FromBottomReplaceSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D51915487FBF00B1F970 /* FromBottomReplaceSegue.m */; };
+		6383D52115487FBF00B1F970 /* FromLeftReplaceSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D51B15487FBF00B1F970 /* FromLeftReplaceSegue.m */; };
+		6383D52215487FBF00B1F970 /* FromRightReplaceSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D51D15487FBF00B1F970 /* FromRightReplaceSegue.m */; };
+		6383D52315487FBF00B1F970 /* FromTopReplaceSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D51F15487FBF00B1F970 /* FromTopReplaceSegue.m */; };
+		6383D5261548802700B1F970 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6383D5251548802700B1F970 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +41,51 @@
 		6383D4C415487E3200B1F970 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6383D4C615487E3200B1F970 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6383D4C815487E3200B1F970 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6383D4CC15487E3200B1F970 /* LifeQuest-Info.plist */ = {isa = PBXFileReference; path = "LifeQuest-Info.plist"; sourceTree = "<group>"; };
+		6383D4CC15487E3200B1F970 /* LifeQuest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LifeQuest-Info.plist"; sourceTree = "<group>"; };
 		6383D4CE15487E3200B1F970 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6383D4D015487E3200B1F970 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6383D4D215487E3200B1F970 /* LifeQuest-Prefix.pch */ = {isa = PBXFileReference; path = "LifeQuest-Prefix.pch"; sourceTree = "<group>"; };
-		6383D4D315487E3200B1F970 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
-		6383D4D415487E3200B1F970 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6383D4D715487E3200B1F970 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		6383D4D915487E3200B1F970 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		6383D4DA15487E3200B1F970 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6383D4D215487E3200B1F970 /* LifeQuest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LifeQuest-Prefix.pch"; sourceTree = "<group>"; };
+		6383D4E115487E7B00B1F970 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6383D4E515487EA500B1F970 /* ActAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActAppDelegate.h; sourceTree = "<group>"; };
+		6383D4E615487EA500B1F970 /* ActAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActAppDelegate.m; sourceTree = "<group>"; };
+		6383D4E815487EB800B1F970 /* ActAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActAddTaskViewController.h; sourceTree = "<group>"; };
+		6383D4E915487EB800B1F970 /* ActAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActAddTaskViewController.m; sourceTree = "<group>"; };
+		6383D4EB15487ECC00B1F970 /* ActDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActDetailViewController.h; sourceTree = "<group>"; };
+		6383D4EC15487ECC00B1F970 /* ActDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActDetailViewController.m; sourceTree = "<group>"; };
+		6383D4ED15487ECC00B1F970 /* ActMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActMainViewController.h; sourceTree = "<group>"; };
+		6383D4EE15487ECC00B1F970 /* ActMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActMainViewController.m; sourceTree = "<group>"; };
+		6383D4EF15487ECC00B1F970 /* ActMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActMasterViewController.h; sourceTree = "<group>"; };
+		6383D4F015487ECC00B1F970 /* ActMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActMasterViewController.m; sourceTree = "<group>"; };
+		6383D4F515487F1500B1F970 /* ActDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActDataController.h; sourceTree = "<group>"; };
+		6383D4F615487F1500B1F970 /* ActDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActDataController.m; sourceTree = "<group>"; };
+		6383D4F715487F1500B1F970 /* ActLocalScoreFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActLocalScoreFill.h; sourceTree = "<group>"; };
+		6383D4F815487F1500B1F970 /* ActLocalScoreFill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActLocalScoreFill.m; sourceTree = "<group>"; };
+		6383D4F915487F1500B1F970 /* ActOneOffTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActOneOffTask.h; sourceTree = "<group>"; };
+		6383D4FA15487F1500B1F970 /* ActOneOffTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActOneOffTask.m; sourceTree = "<group>"; };
+		6383D4FB15487F1500B1F970 /* ActScoreContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActScoreContainer.h; sourceTree = "<group>"; };
+		6383D4FC15487F1500B1F970 /* ActScoreContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActScoreContainer.m; sourceTree = "<group>"; };
+		6383D4FD15487F1500B1F970 /* ActTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActTask.h; sourceTree = "<group>"; };
+		6383D4FE15487F1500B1F970 /* ActTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActTask.m; sourceTree = "<group>"; };
+		6383D50515487F4500B1F970 /* TimerCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimerCircle.png; sourceTree = "<group>"; };
+		6383D50715487F4D00B1F970 /* ActuatorIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ActuatorIcon.png; sourceTree = "<group>"; };
+		6383D50915487F5500B1F970 /* ActBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ActBackground.png; sourceTree = "<group>"; };
+		6383D50B15487F6100B1F970 /* ActCharacterFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActCharacterFile.h; sourceTree = "<group>"; };
+		6383D50C15487F6100B1F970 /* ActCharacterFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActCharacterFile.m; sourceTree = "<group>"; };
+		6383D50E15487F9100B1F970 /* ActCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActCommon.h; sourceTree = "<group>"; };
+		6383D50F15487F9100B1F970 /* ActCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActCommon.m; sourceTree = "<group>"; };
+		6383D51015487F9100B1F970 /* ActCustomCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActCustomCellView.h; sourceTree = "<group>"; };
+		6383D51115487F9100B1F970 /* ActCustomCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActCustomCellView.m; sourceTree = "<group>"; };
+		6383D51215487F9100B1F970 /* ActCustomHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActCustomHeader.h; sourceTree = "<group>"; };
+		6383D51315487F9100B1F970 /* ActCustomHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActCustomHeader.m; sourceTree = "<group>"; };
+		6383D51815487FBF00B1F970 /* FromBottomReplaceSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromBottomReplaceSegue.h; sourceTree = "<group>"; };
+		6383D51915487FBF00B1F970 /* FromBottomReplaceSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromBottomReplaceSegue.m; sourceTree = "<group>"; };
+		6383D51A15487FBF00B1F970 /* FromLeftReplaceSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromLeftReplaceSegue.h; sourceTree = "<group>"; };
+		6383D51B15487FBF00B1F970 /* FromLeftReplaceSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromLeftReplaceSegue.m; sourceTree = "<group>"; };
+		6383D51C15487FBF00B1F970 /* FromRightReplaceSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromRightReplaceSegue.h; sourceTree = "<group>"; };
+		6383D51D15487FBF00B1F970 /* FromRightReplaceSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromRightReplaceSegue.m; sourceTree = "<group>"; };
+		6383D51E15487FBF00B1F970 /* FromTopReplaceSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromTopReplaceSegue.h; sourceTree = "<group>"; };
+		6383D51F15487FBF00B1F970 /* FromTopReplaceSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromTopReplaceSegue.m; sourceTree = "<group>"; };
+		6383D5251548802700B1F970 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6383D5261548802700B1F970 /* AudioToolbox.framework in Frameworks */,
 				6383D4C515487E3200B1F970 /* UIKit.framework in Frameworks */,
 				6383D4C715487E3200B1F970 /* Foundation.framework in Frameworks */,
 				6383D4C915487E3200B1F970 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +106,7 @@
 		6383D4B515487E3200B1F970 = {
 			isa = PBXGroup;
 			children = (
+				6383D5251548802700B1F970 /* AudioToolbox.framework */,
 				6383D4CA15487E3200B1F970 /* LifeQuest */,
 				6383D4C315487E3200B1F970 /* Frameworks */,
 				6383D4C115487E3200B1F970 /* Products */,
@@ -77,11 +134,14 @@
 		6383D4CA15487E3200B1F970 /* LifeQuest */ = {
 			isa = PBXGroup;
 			children = (
-				6383D4D315487E3200B1F970 /* AppDelegate.h */,
-				6383D4D415487E3200B1F970 /* AppDelegate.m */,
-				6383D4D615487E3200B1F970 /* MainStoryboard.storyboard */,
-				6383D4D915487E3200B1F970 /* ViewController.h */,
-				6383D4DA15487E3200B1F970 /* ViewController.m */,
+				6383D4E115487E7B00B1F970 /* MainStoryboard.storyboard */,
+				6383D4E515487EA500B1F970 /* ActAppDelegate.h */,
+				6383D4E615487EA500B1F970 /* ActAppDelegate.m */,
+				6383D4F415487EE700B1F970 /* View Controllers */,
+				6383D50415487F2400B1F970 /* Tasks and Data Controllers */,
+				6383D51715487F9600B1F970 /* Custom Views */,
+				6383D52415487FC300B1F970 /* Segues */,
+				6383D50D15487F6B00B1F970 /* Character */,
 				6383D4CB15487E3200B1F970 /* Supporting Files */,
 			);
 			path = LifeQuest;
@@ -90,12 +150,84 @@
 		6383D4CB15487E3200B1F970 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6383D50915487F5500B1F970 /* ActBackground.png */,
+				6383D50715487F4D00B1F970 /* ActuatorIcon.png */,
+				6383D50515487F4500B1F970 /* TimerCircle.png */,
 				6383D4CC15487E3200B1F970 /* LifeQuest-Info.plist */,
 				6383D4CD15487E3200B1F970 /* InfoPlist.strings */,
 				6383D4D015487E3200B1F970 /* main.m */,
 				6383D4D215487E3200B1F970 /* LifeQuest-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6383D4F415487EE700B1F970 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6383D4E815487EB800B1F970 /* ActAddTaskViewController.h */,
+				6383D4E915487EB800B1F970 /* ActAddTaskViewController.m */,
+				6383D4EB15487ECC00B1F970 /* ActDetailViewController.h */,
+				6383D4EC15487ECC00B1F970 /* ActDetailViewController.m */,
+				6383D4ED15487ECC00B1F970 /* ActMainViewController.h */,
+				6383D4EE15487ECC00B1F970 /* ActMainViewController.m */,
+				6383D4EF15487ECC00B1F970 /* ActMasterViewController.h */,
+				6383D4F015487ECC00B1F970 /* ActMasterViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6383D50415487F2400B1F970 /* Tasks and Data Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6383D4F515487F1500B1F970 /* ActDataController.h */,
+				6383D4F615487F1500B1F970 /* ActDataController.m */,
+				6383D4F715487F1500B1F970 /* ActLocalScoreFill.h */,
+				6383D4F815487F1500B1F970 /* ActLocalScoreFill.m */,
+				6383D4F915487F1500B1F970 /* ActOneOffTask.h */,
+				6383D4FA15487F1500B1F970 /* ActOneOffTask.m */,
+				6383D4FB15487F1500B1F970 /* ActScoreContainer.h */,
+				6383D4FC15487F1500B1F970 /* ActScoreContainer.m */,
+				6383D4FD15487F1500B1F970 /* ActTask.h */,
+				6383D4FE15487F1500B1F970 /* ActTask.m */,
+			);
+			name = "Tasks and Data Controllers";
+			sourceTree = "<group>";
+		};
+		6383D50D15487F6B00B1F970 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				6383D50B15487F6100B1F970 /* ActCharacterFile.h */,
+				6383D50C15487F6100B1F970 /* ActCharacterFile.m */,
+			);
+			name = Character;
+			sourceTree = "<group>";
+		};
+		6383D51715487F9600B1F970 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				6383D50E15487F9100B1F970 /* ActCommon.h */,
+				6383D50F15487F9100B1F970 /* ActCommon.m */,
+				6383D51015487F9100B1F970 /* ActCustomCellView.h */,
+				6383D51115487F9100B1F970 /* ActCustomCellView.m */,
+				6383D51215487F9100B1F970 /* ActCustomHeader.h */,
+				6383D51315487F9100B1F970 /* ActCustomHeader.m */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		6383D52415487FC300B1F970 /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				6383D51815487FBF00B1F970 /* FromBottomReplaceSegue.h */,
+				6383D51915487FBF00B1F970 /* FromBottomReplaceSegue.m */,
+				6383D51A15487FBF00B1F970 /* FromLeftReplaceSegue.h */,
+				6383D51B15487FBF00B1F970 /* FromLeftReplaceSegue.m */,
+				6383D51C15487FBF00B1F970 /* FromRightReplaceSegue.h */,
+				6383D51D15487FBF00B1F970 /* FromRightReplaceSegue.m */,
+				6383D51E15487FBF00B1F970 /* FromTopReplaceSegue.h */,
+				6383D51F15487FBF00B1F970 /* FromTopReplaceSegue.m */,
+			);
+			name = Segues;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6383D4CF15487E3200B1F970 /* InfoPlist.strings in Resources */,
-				6383D4D815487E3200B1F970 /* MainStoryboard.storyboard in Resources */,
+				6383D4E215487E7B00B1F970 /* MainStoryboard.storyboard in Resources */,
+				6383D50615487F4500B1F970 /* TimerCircle.png in Resources */,
+				6383D50815487F4D00B1F970 /* ActuatorIcon.png in Resources */,
+				6383D50A15487F5500B1F970 /* ActBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,8 +296,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				6383D4D115487E3200B1F970 /* main.m in Sources */,
-				6383D4D515487E3200B1F970 /* AppDelegate.m in Sources */,
-				6383D4DB15487E3200B1F970 /* ViewController.m in Sources */,
+				6383D4E715487EA500B1F970 /* ActAppDelegate.m in Sources */,
+				6383D4EA15487EB800B1F970 /* ActAddTaskViewController.m in Sources */,
+				6383D4F115487ECC00B1F970 /* ActDetailViewController.m in Sources */,
+				6383D4F215487ECC00B1F970 /* ActMainViewController.m in Sources */,
+				6383D4F315487ECC00B1F970 /* ActMasterViewController.m in Sources */,
+				6383D4FF15487F1500B1F970 /* ActDataController.m in Sources */,
+				6383D50015487F1500B1F970 /* ActLocalScoreFill.m in Sources */,
+				6383D50115487F1500B1F970 /* ActOneOffTask.m in Sources */,
+				6383D50215487F1500B1F970 /* ActScoreContainer.m in Sources */,
+				6383D50315487F1500B1F970 /* ActTask.m in Sources */,
+				6383D51415487F9100B1F970 /* ActCommon.m in Sources */,
+				6383D51515487F9100B1F970 /* ActCustomCellView.m in Sources */,
+				6383D51615487F9100B1F970 /* ActCustomHeader.m in Sources */,
+				6383D52015487FBF00B1F970 /* FromBottomReplaceSegue.m in Sources */,
+				6383D52115487FBF00B1F970 /* FromLeftReplaceSegue.m in Sources */,
+				6383D52215487FBF00B1F970 /* FromRightReplaceSegue.m in Sources */,
+				6383D52315487FBF00B1F970 /* FromTopReplaceSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,14 +325,6 @@
 				6383D4CE15487E3200B1F970 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6383D4D615487E3200B1F970 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6383D4D715487E3200B1F970 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
