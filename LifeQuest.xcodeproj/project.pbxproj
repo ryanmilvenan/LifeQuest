@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6383D4C515487E3200B1F970 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6383D4C415487E3200B1F970 /* UIKit.framework */; };
+		6383D4C715487E3200B1F970 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6383D4C615487E3200B1F970 /* Foundation.framework */; };
+		6383D4C915487E3200B1F970 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6383D4C815487E3200B1F970 /* CoreGraphics.framework */; };
+		6383D4CF15487E3200B1F970 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6383D4CD15487E3200B1F970 /* InfoPlist.strings */; };
+		6383D4D115487E3200B1F970 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4D015487E3200B1F970 /* main.m */; };
+		6383D4D515487E3200B1F970 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4D415487E3200B1F970 /* AppDelegate.m */; };
+		6383D4D815487E3200B1F970 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6383D4D615487E3200B1F970 /* MainStoryboard.storyboard */; };
+		6383D4DB15487E3200B1F970 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D4DA15487E3200B1F970 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6383D4C015487E3200B1F970 /* LifeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6383D4C415487E3200B1F970 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6383D4C615487E3200B1F970 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6383D4C815487E3200B1F970 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6383D4CC15487E3200B1F970 /* LifeQuest-Info.plist */ = {isa = PBXFileReference; path = "LifeQuest-Info.plist"; sourceTree = "<group>"; };
+		6383D4CE15487E3200B1F970 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6383D4D015487E3200B1F970 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6383D4D215487E3200B1F970 /* LifeQuest-Prefix.pch */ = {isa = PBXFileReference; path = "LifeQuest-Prefix.pch"; sourceTree = "<group>"; };
+		6383D4D315487E3200B1F970 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		6383D4D415487E3200B1F970 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6383D4D715487E3200B1F970 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6383D4D915487E3200B1F970 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		6383D4DA15487E3200B1F970 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6383D4BD15487E3200B1F970 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6383D4C515487E3200B1F970 /* UIKit.framework in Frameworks */,
+				6383D4C715487E3200B1F970 /* Foundation.framework in Frameworks */,
+				6383D4C915487E3200B1F970 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6383D4B515487E3200B1F970 = {
+			isa = PBXGroup;
+			children = (
+				6383D4CA15487E3200B1F970 /* LifeQuest */,
+				6383D4C315487E3200B1F970 /* Frameworks */,
+				6383D4C115487E3200B1F970 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6383D4C115487E3200B1F970 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6383D4C015487E3200B1F970 /* LifeQuest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6383D4C315487E3200B1F970 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6383D4C415487E3200B1F970 /* UIKit.framework */,
+				6383D4C615487E3200B1F970 /* Foundation.framework */,
+				6383D4C815487E3200B1F970 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6383D4CA15487E3200B1F970 /* LifeQuest */ = {
+			isa = PBXGroup;
+			children = (
+				6383D4D315487E3200B1F970 /* AppDelegate.h */,
+				6383D4D415487E3200B1F970 /* AppDelegate.m */,
+				6383D4D615487E3200B1F970 /* MainStoryboard.storyboard */,
+				6383D4D915487E3200B1F970 /* ViewController.h */,
+				6383D4DA15487E3200B1F970 /* ViewController.m */,
+				6383D4CB15487E3200B1F970 /* Supporting Files */,
+			);
+			path = LifeQuest;
+			sourceTree = "<group>";
+		};
+		6383D4CB15487E3200B1F970 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6383D4CC15487E3200B1F970 /* LifeQuest-Info.plist */,
+				6383D4CD15487E3200B1F970 /* InfoPlist.strings */,
+				6383D4D015487E3200B1F970 /* main.m */,
+				6383D4D215487E3200B1F970 /* LifeQuest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6383D4BF15487E3200B1F970 /* LifeQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6383D4DE15487E3200B1F970 /* Build configuration list for PBXNativeTarget "LifeQuest" */;
+			buildPhases = (
+				6383D4BC15487E3200B1F970 /* Sources */,
+				6383D4BD15487E3200B1F970 /* Frameworks */,
+				6383D4BE15487E3200B1F970 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeQuest;
+			productName = LifeQuest;
+			productReference = 6383D4C015487E3200B1F970 /* LifeQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6383D4B715487E3200B1F970 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 6383D4BA15487E3200B1F970 /* Build configuration list for PBXProject "LifeQuest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6383D4B515487E3200B1F970;
+			productRefGroup = 6383D4C115487E3200B1F970 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6383D4BF15487E3200B1F970 /* LifeQuest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6383D4BE15487E3200B1F970 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6383D4CF15487E3200B1F970 /* InfoPlist.strings in Resources */,
+				6383D4D815487E3200B1F970 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6383D4BC15487E3200B1F970 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6383D4D115487E3200B1F970 /* main.m in Sources */,
+				6383D4D515487E3200B1F970 /* AppDelegate.m in Sources */,
+				6383D4DB15487E3200B1F970 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6383D4CD15487E3200B1F970 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6383D4CE15487E3200B1F970 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6383D4D615487E3200B1F970 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6383D4D715487E3200B1F970 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6383D4DC15487E3200B1F970 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6383D4DD15487E3200B1F970 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6383D4DF15487E3200B1F970 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LifeQuest/LifeQuest-Prefix.pch";
+				INFOPLIST_FILE = "LifeQuest/LifeQuest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6383D4E015487E3200B1F970 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LifeQuest/LifeQuest-Prefix.pch";
+				INFOPLIST_FILE = "LifeQuest/LifeQuest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6383D4BA15487E3200B1F970 /* Build configuration list for PBXProject "LifeQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6383D4DC15487E3200B1F970 /* Debug */,
+				6383D4DD15487E3200B1F970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6383D4DE15487E3200B1F970 /* Build configuration list for PBXNativeTarget "LifeQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6383D4DF15487E3200B1F970 /* Debug */,
+				6383D4E015487E3200B1F970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6383D4B715487E3200B1F970 /* Project object */;
+}
