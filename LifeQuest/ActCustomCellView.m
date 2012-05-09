@@ -7,14 +7,20 @@
 //
 
 #import "ActCustomCellView.h"
-#import "ActCommon.h"
 
 @implementation ActCustomCellView
+
+/*
 @synthesize whiteColor = _whiteColor;
 @synthesize goldColor = _goldColor;
 @synthesize tanColor = _tanColor;
 @synthesize separatorColor = _separatorColor;
+*/
 
+@synthesize nameLabel;
+@synthesize scoreLabel;
+
+/*
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -58,14 +64,14 @@
     
     CGContextRestoreGState(context);
     //Outline for Cell
-    /*
+    
      CGRect underRect = paperRect;
      underRect.size.height -= 1;
      underRect = rectFor1PxStroke(underRect);
      CGContextSetStrokeColorWithColor(context, brownColor);
      CGContextStrokeRect(context, underRect);
-     */
+     
 }
-
+*/
 
 @end

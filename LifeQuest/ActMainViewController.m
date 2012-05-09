@@ -7,6 +7,7 @@
 //
 
 #import "ActMainViewController.h"
+#import "GLViewController.h"
 #import "ActMasterViewController.h"
 #import "ActAddTaskViewController.h"
 #import "ActDataController.h"
@@ -108,9 +109,6 @@
         actMasterViewController.category = @"Self";
     }
     if([[segue identifier] isEqualToString:@"ShowSocialTable"]){        
-        ActMasterViewController *actMasterViewController = (ActMasterViewController *)[segue destinationViewController];
-        actMasterViewController.dataController = self.socialDataController;
-        actMasterViewController.category = @"Social";
     }
     if([[segue identifier] isEqualToString:@"ShowWorkTable"]){        
         ActMasterViewController *actMasterViewController = (ActMasterViewController *)[segue destinationViewController];

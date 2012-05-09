@@ -11,6 +11,7 @@
 #import "ActMainViewController.h"
 #import "ActScoreContainer.h"
 
+
 @implementation ActAppDelegate
 
 @synthesize window = _window;

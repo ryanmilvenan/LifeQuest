@@ -17,6 +17,10 @@
 #import "ActCustomHeader.h"
 #import "ActCustomCellView.h"
 
+NSString *const REUSE_ID_TOP = @"TopRow";
+NSString *const REUSE_ID_MID = @"MiddleRowArr";
+NSString *const REUSE_ID_BOT = @"BottomRowArr";
+
 
 @implementation ActMasterViewController
 
@@ -30,6 +34,15 @@
     [super awakeFromNib];
 }
 
+- (void)registerNIBs{
+    NSBundle *classBundle = [NSBundle bundleForClass:[ActCustomCellView class]];
+    
+    UINib *middleNib = [UINib nibWithNibName:REUSE_ID_MID bundle:classBundle];
+    [[self tableView] registerNib:middleNib forCellReuseIdentifier:REUSE_ID_MID];
+    UINib *bottomNib = [UINib nibWithNibName:REUSE_ID_BOT bundle:classBundle];
+    [[self tableView] registerNib:bottomNib forCellReuseIdentifier:REUSE_ID_BOT];
+}
+
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -37,11 +50,22 @@
    
     
     self.navigationItem.rightBarButtonItem = nil;
-    
+    [self registerNIBs];
     /*
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     */
+}
+
+- (NSString *)reuseIdentifierForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSInteger rowCount = [self tableView:[self tableView] numberOfRowsInSection:indexPath.section];
+    NSInteger rowIndex = indexPath.row;
+    
+    if (rowIndex == rowCount - 1) {
+        return REUSE_ID_BOT;
+    }
+    
+    return REUSE_ID_MID;
 }
 
 - (void)configureView{
@@ -96,10 +120,10 @@
         return @"Weekly Tasks";
     }
     else if(section == 2){
-        return @"One Off Tasks";
+        return @"One-Off Tasks";
     }
     else {
-        return @"Current Category Score:";
+        return @"Score:";
     }
 }
 
@@ -115,30 +139,44 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /*
     static NSString *taskCellIdentifier = @"ActTaskCell";
     static NSString *oneOffCellIdentifier = @"ActOneOffCell";
+    */
     static NSString *scoreCellIdentifier = @"ActScoreCell";
+    UIFont *goldBox = [UIFont fontWithName:@"GoldBox" size:17];
     
     if (indexPath.section == 0){
-        
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:taskCellIdentifier];
-        cell.backgroundView = [[ActCustomCellView alloc] init];
-        cell.selectedBackgroundView = [[ActCustomCellView alloc] init];
-        
+        NSString *reuseID = [self reuseIdentifierForRowAtIndexPath:indexPath]; 
+        ActCustomCellView *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
         NSMutableArray *arrayAtIndex = self.dataController.dailyTaskList;
         ActTask *taskAtIndex = [arrayAtIndex objectAtIndex:indexPath.row];
         NSString *scoreString = [[NSString alloc] initWithFormat:@"%i",[taskAtIndex.score intValue]];
+        cell.nameLabel.font = goldBox;
+        cell.scoreLabel.font = goldBox;
+        cell.nameLabel.text = taskAtIndex.name;
+        cell.scoreLabel.text = scoreString;
         
-        cell.textLabel.backgroundColor = [UIColor clearColor];
-        cell.detailTextLabel.backgroundColor = [UIColor clearColor];
-        [[cell textLabel] setText:taskAtIndex.name];
-        [[cell detailTextLabel] setText:scoreString];
+        //cell.textLabel.backgroundColor = [UIColor clearColor];
+        //cell.detailTextLabel.backgroundColor = [UIColor clearColor];
+        
+        //[[cell detailTextLabel] setText:scoreString];
     
     return cell;
         
     }
     if (indexPath.section == 1){
         
+        NSString *reuseID = [self reuseIdentifierForRowAtIndexPath:indexPath]; 
+        ActCustomCellView *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
+        
+        NSMutableArray *arrayAtIndex = self.dataController.dailyTaskList;
+        ActTask *taskAtIndex = [arrayAtIndex objectAtIndex:indexPath.row];
+        NSString *scoreString = [[NSString alloc] initWithFormat:@"%i",[taskAtIndex.score intValue]];
+        cell.nameLabel.text = taskAtIndex.name;
+        cell.scoreLabel.text = scoreString;
+        
+        /*
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:taskCellIdentifier];
         
         cell.backgroundView = [[ActCustomCellView alloc] init];
@@ -151,12 +189,21 @@
         cell.detailTextLabel.backgroundColor = [UIColor clearColor];
         [[cell textLabel] setText:taskAtIndex.name];
         [[cell detailTextLabel] setText:scoreString];
-        
+        */
         return cell;
         
     }
     if (indexPath.section == 2) {
+        NSString *reuseID = [self reuseIdentifierForRowAtIndexPath:indexPath]; 
+        ActCustomCellView *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
         
+        NSMutableArray *arrayAtIndex = self.dataController.dailyTaskList;
+        ActTask *taskAtIndex = [arrayAtIndex objectAtIndex:indexPath.row];
+        NSString *scoreString = [[NSString alloc] initWithFormat:@"%i",[taskAtIndex.score intValue]];
+        cell.nameLabel.text = taskAtIndex.name;
+        cell.scoreLabel.text = scoreString;
+        
+        /*
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:oneOffCellIdentifier];
         
         //Use Custom Cells
@@ -170,10 +217,20 @@
         cell.detailTextLabel.backgroundColor = [UIColor clearColor];
         [[cell textLabel] setText:oneOffAtIndex.name];
         [[cell detailTextLabel] setText:scoreString];
-        
+        */
         return cell;
     }
     else {
+        /*
+        NSString *reuseID = [self reuseIdentifierForRowAtIndexPath:indexPath]; 
+        ActCustomCellView *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
+        
+        NSMutableArray *arrayAtIndex = self.dataController.dailyTaskList;
+        ActTask *taskAtIndex = [arrayAtIndex objectAtIndex:indexPath.row];
+        NSString *scoreString = [[NSString alloc] initWithFormat:@"%i",[taskAtIndex.score intValue]];
+        cell.nameLabel.text = taskAtIndex.name;
+        cell.scoreLabel.text = scoreString;
+        */
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:scoreCellIdentifier];
         
         //Use Custom Cell

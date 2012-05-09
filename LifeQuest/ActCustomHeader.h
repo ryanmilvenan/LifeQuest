@@ -10,11 +10,8 @@
 
 @interface ActCustomHeader : UIView
 
+
 @property (strong) UILabel *titleLabel;
-@property (strong) UIColor *lightColor;
-@property (strong) UIColor *darkColor;
-@property (strong) UIColor *shadowColor;
-@property (strong) UIColor *tanColor;
 @property CGRect coloredBoxRect;
 @property CGRect paperRect;
 

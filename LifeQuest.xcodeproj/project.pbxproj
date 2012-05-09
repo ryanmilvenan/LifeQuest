@@ -34,6 +34,15 @@
 		6383D52215487FBF00B1F970 /* FromRightReplaceSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D51D15487FBF00B1F970 /* FromRightReplaceSegue.m */; };
 		6383D52315487FBF00B1F970 /* FromTopReplaceSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D51F15487FBF00B1F970 /* FromTopReplaceSegue.m */; };
 		6383D5261548802700B1F970 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6383D5251548802700B1F970 /* AudioToolbox.framework */; };
+		6383D5281548811B00B1F970 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6383D5271548811B00B1F970 /* GLKit.framework */; };
+		6383D52A1548812100B1F970 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6383D5291548812100B1F970 /* OpenGLES.framework */; };
+		6383D534154881F400B1F970 /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383D533154881F400B1F970 /* GLViewController.m */; };
+		6383D7A21553D0A000B1F970 /* CellRowMid.png in Resources */ = {isa = PBXBuildFile; fileRef = 6383D7A11553D0A000B1F970 /* CellRowMid.png */; };
+		6383D7A61554F59300B1F970 /* CellRowBot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6383D7A51554F59300B1F970 /* CellRowBot.png */; };
+		6383D7A81554F66900B1F970 /* BottomRowArr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6383D7A71554F66900B1F970 /* BottomRowArr.xib */; };
+		6383D7AA15565B6600B1F970 /* GoldBox.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6383D7A91556545D00B1F970 /* GoldBox.ttf */; };
+		6383D7AE155769CD00B1F970 /* Header.png in Resources */ = {isa = PBXBuildFile; fileRef = 6383D7AD155769CD00B1F970 /* Header.png */; };
+		CE9428A2154A5A62009D5DCD /* MiddleRowArr.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9428A1154A5A62009D5DCD /* MiddleRowArr.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +95,16 @@
 		6383D51E15487FBF00B1F970 /* FromTopReplaceSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromTopReplaceSegue.h; sourceTree = "<group>"; };
 		6383D51F15487FBF00B1F970 /* FromTopReplaceSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromTopReplaceSegue.m; sourceTree = "<group>"; };
 		6383D5251548802700B1F970 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6383D5271548811B00B1F970 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		6383D5291548812100B1F970 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		6383D532154881F400B1F970 /* GLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
+		6383D533154881F400B1F970 /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLViewController.m; sourceTree = "<group>"; };
+		6383D7A11553D0A000B1F970 /* CellRowMid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CellRowMid.png; sourceTree = "<group>"; };
+		6383D7A51554F59300B1F970 /* CellRowBot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CellRowBot.png; sourceTree = "<group>"; };
+		6383D7A71554F66900B1F970 /* BottomRowArr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomRowArr.xib; sourceTree = "<group>"; };
+		6383D7A91556545D00B1F970 /* GoldBox.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GoldBox.ttf; sourceTree = "<group>"; };
+		6383D7AD155769CD00B1F970 /* Header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Header.png; sourceTree = "<group>"; };
+		CE9428A1154A5A62009D5DCD /* MiddleRowArr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MiddleRowArr.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6383D52A1548812100B1F970 /* OpenGLES.framework in Frameworks */,
+				6383D5281548811B00B1F970 /* GLKit.framework in Frameworks */,
 				6383D5261548802700B1F970 /* AudioToolbox.framework in Frameworks */,
 				6383D4C515487E3200B1F970 /* UIKit.framework in Frameworks */,
 				6383D4C715487E3200B1F970 /* Foundation.framework in Frameworks */,
@@ -106,7 +127,6 @@
 		6383D4B515487E3200B1F970 = {
 			isa = PBXGroup;
 			children = (
-				6383D5251548802700B1F970 /* AudioToolbox.framework */,
 				6383D4CA15487E3200B1F970 /* LifeQuest */,
 				6383D4C315487E3200B1F970 /* Frameworks */,
 				6383D4C115487E3200B1F970 /* Products */,
@@ -124,6 +144,9 @@
 		6383D4C315487E3200B1F970 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6383D5291548812100B1F970 /* OpenGLES.framework */,
+				6383D5271548811B00B1F970 /* GLKit.framework */,
+				6383D5251548802700B1F970 /* AudioToolbox.framework */,
 				6383D4C415487E3200B1F970 /* UIKit.framework */,
 				6383D4C615487E3200B1F970 /* Foundation.framework */,
 				6383D4C815487E3200B1F970 /* CoreGraphics.framework */,
@@ -150,6 +173,10 @@
 		6383D4CB15487E3200B1F970 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6383D7A91556545D00B1F970 /* GoldBox.ttf */,
+				6383D7AD155769CD00B1F970 /* Header.png */,
+				6383D7A51554F59300B1F970 /* CellRowBot.png */,
+				6383D7A11553D0A000B1F970 /* CellRowMid.png */,
 				6383D50915487F5500B1F970 /* ActBackground.png */,
 				6383D50715487F4D00B1F970 /* ActuatorIcon.png */,
 				6383D50515487F4500B1F970 /* TimerCircle.png */,
@@ -172,6 +199,8 @@
 				6383D4EE15487ECC00B1F970 /* ActMainViewController.m */,
 				6383D4EF15487ECC00B1F970 /* ActMasterViewController.h */,
 				6383D4F015487ECC00B1F970 /* ActMasterViewController.m */,
+				6383D532154881F400B1F970 /* GLViewController.h */,
+				6383D533154881F400B1F970 /* GLViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -207,6 +236,8 @@
 			children = (
 				6383D50E15487F9100B1F970 /* ActCommon.h */,
 				6383D50F15487F9100B1F970 /* ActCommon.m */,
+				CE9428A1154A5A62009D5DCD /* MiddleRowArr.xib */,
+				6383D7A71554F66900B1F970 /* BottomRowArr.xib */,
 				6383D51015487F9100B1F970 /* ActCustomCellView.h */,
 				6383D51115487F9100B1F970 /* ActCustomCellView.m */,
 				6383D51215487F9100B1F970 /* ActCustomHeader.h */,
@@ -280,11 +311,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6383D7AA15565B6600B1F970 /* GoldBox.ttf in Resources */,
 				6383D4CF15487E3200B1F970 /* InfoPlist.strings in Resources */,
 				6383D4E215487E7B00B1F970 /* MainStoryboard.storyboard in Resources */,
 				6383D50615487F4500B1F970 /* TimerCircle.png in Resources */,
 				6383D50815487F4D00B1F970 /* ActuatorIcon.png in Resources */,
 				6383D50A15487F5500B1F970 /* ActBackground.png in Resources */,
+				CE9428A2154A5A62009D5DCD /* MiddleRowArr.xib in Resources */,
+				6383D7A21553D0A000B1F970 /* CellRowMid.png in Resources */,
+				6383D7A61554F59300B1F970 /* CellRowBot.png in Resources */,
+				6383D7A81554F66900B1F970 /* BottomRowArr.xib in Resources */,
+				6383D7AE155769CD00B1F970 /* Header.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +350,7 @@
 				6383D52115487FBF00B1F970 /* FromLeftReplaceSegue.m in Sources */,
 				6383D52215487FBF00B1F970 /* FromRightReplaceSegue.m in Sources */,
 				6383D52315487FBF00B1F970 /* FromTopReplaceSegue.m in Sources */,
+				6383D534154881F400B1F970 /* GLViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +454,7 @@
 				6383D4E015487E3200B1F970 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

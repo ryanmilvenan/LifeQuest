@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ActCustomCellView : UIView
+@interface ActCustomCellView : UITableViewCell
 
+/*
 @property(nonatomic,strong)UIColor *whiteColor;
 @property(nonatomic,strong)UIColor *goldColor;
 @property(nonatomic,strong)UIColor *tanColor;
 @property(nonatomic,strong)UIColor *separatorColor;
+*/
 
+@property(nonatomic,weak)IBOutlet UILabel *nameLabel;
+@property(nonatomic,weak)IBOutlet UILabel *scoreLabel;
 
 @end
