@@ -17,12 +17,19 @@
 
 @implementation ActScoreContainer
 
+@synthesize docPath = _docPath;
 @synthesize scoreContainer = _scoreContainer;
 @synthesize todaysDate = _todaysDate;
 @synthesize choreData = _choreData;
 @synthesize workData = _workData;
 @synthesize socialData = _socialData;
 @synthesize selfData = _selfData;
+@synthesize choreScore = _choreScore;
+@synthesize workScore = _workScore;
+@synthesize socialScore = _socialScore;
+@synthesize selfScore = _selfScore;
+
+
 
 //Instance Methods
 
@@ -44,6 +51,14 @@
         return self;
     }
     return nil;
+}
+
+- (id)initWithDocPath:(NSString *)docPath {
+    if ((self = [super init])) {
+        _docPath = [docPath copy];
+        [self loadDataFromDisk];
+    }
+    return self;
 }
 
 - (void)refreshScoreContainer{
@@ -82,6 +97,43 @@
     }
     return nil;
 }
+
+- (NSNumber *)calculateChoreXp:(NSNumber *)xpHolder {
+    int temp = [[self.choreData getScoreOfList] intValue];
+    int xpTemp = [xpHolder intValue];
+    temp = temp + xpTemp;
+    
+    xpHolder = [NSNumber numberWithInt:xpTemp];
+    return xpHolder;
+}
+
+- (NSNumber *)calculateWorkXp:(NSNumber *)xpHolder {
+    int temp = [[self.workData getScoreOfList] intValue];
+    int xpTemp = [xpHolder intValue];
+    temp = temp + xpTemp;
+    
+    xpHolder = [NSNumber numberWithInt:xpTemp];
+    return xpHolder;
+}
+
+- (NSNumber *)calculateSocialXp:(NSNumber *)xpHolder {
+    int temp = [[self.socialData getScoreOfList] intValue];
+    int xpTemp = [xpHolder intValue];
+    temp = temp + xpTemp;
+    
+    xpHolder = [NSNumber numberWithInt:xpTemp];
+    return xpHolder;
+}
+
+- (NSNumber *)calculateSelfXp:(NSNumber *)xpHolder {
+    int temp = [[self.selfData getScoreOfList] intValue];
+    int xpTemp = [xpHolder intValue];
+    temp = temp + xpTemp;
+    
+    xpHolder = [NSNumber numberWithInt:xpTemp];
+    return xpHolder;
+}
+
 
 - (NSString *)pathForDataFile
 {
@@ -134,6 +186,9 @@
     self.socialData = [self.scoreContainer valueForKey:kSocial];
     self.selfData = [self.selfData valueForKey:kSelf];
 }
+
+
+
 
 
 @end

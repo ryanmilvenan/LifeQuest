@@ -112,6 +112,26 @@
     _localTotalScore = [NSNumber numberWithInt:temp];
 }
 
+-(NSNumber *)getScoreOfList{
+    int temp = 0;
+    if ([[self.masterTaskList objectAtIndex:0] count]>0) {
+        for (int k = 0; k<([self.dailyTaskList count]); k++) {
+            ActTask *tempTask1 = [self.dailyTaskList objectAtIndex:k];
+            temp += [tempTask1.score integerValue];
+        }
+    }
+    if ([[self.masterTaskList objectAtIndex:1] count]>0) {
+        for (int k = 0; k<([self.weeklyTaskList count]); k++) {
+            ActTask *tempTask2 = [self.weeklyTaskList objectAtIndex:k];
+            temp += [tempTask2.score integerValue];
+        }
+    }
+    temp += [self.oneOffScore intValue];
+    _localTotalScore = [NSNumber numberWithInt:temp];
+    return self.localTotalScore;
+}
+
+
 -(ActTask *)objectInListAtIndex:(int)array index:(NSUInteger)theIndex{
     if(array == 0) {
         return [self.dailyTaskList objectAtIndex:theIndex];

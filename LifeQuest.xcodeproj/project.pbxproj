@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		637FC8A71562CF5B002584A9 /* ActCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 637FC8A61562CF5B002584A9 /* ActCharacter.m */; };
 		6383D4C515487E3200B1F970 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6383D4C415487E3200B1F970 /* UIKit.framework */; };
 		6383D4C715487E3200B1F970 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6383D4C615487E3200B1F970 /* Foundation.framework */; };
 		6383D4C915487E3200B1F970 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6383D4C815487E3200B1F970 /* CoreGraphics.framework */; };
@@ -46,6 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		637FC8A51562CF5B002584A9 /* ActCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActCharacter.h; sourceTree = "<group>"; };
+		637FC8A61562CF5B002584A9 /* ActCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActCharacter.m; sourceTree = "<group>"; };
 		6383D4C015487E3200B1F970 /* LifeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6383D4C415487E3200B1F970 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6383D4C615487E3200B1F970 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,8 +81,6 @@
 		6383D50515487F4500B1F970 /* TimerCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimerCircle.png; sourceTree = "<group>"; };
 		6383D50715487F4D00B1F970 /* ActuatorIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ActuatorIcon.png; sourceTree = "<group>"; };
 		6383D50915487F5500B1F970 /* ActBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ActBackground.png; sourceTree = "<group>"; };
-		6383D50B15487F6100B1F970 /* ActCharacterFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActCharacterFile.h; sourceTree = "<group>"; };
-		6383D50C15487F6100B1F970 /* ActCharacterFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActCharacterFile.m; sourceTree = "<group>"; };
 		6383D50E15487F9100B1F970 /* ActCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActCommon.h; sourceTree = "<group>"; };
 		6383D50F15487F9100B1F970 /* ActCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActCommon.m; sourceTree = "<group>"; };
 		6383D51015487F9100B1F970 /* ActCustomCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActCustomCellView.h; sourceTree = "<group>"; };
@@ -214,8 +215,6 @@
 				6383D4F815487F1500B1F970 /* ActLocalScoreFill.m */,
 				6383D4F915487F1500B1F970 /* ActOneOffTask.h */,
 				6383D4FA15487F1500B1F970 /* ActOneOffTask.m */,
-				6383D4FB15487F1500B1F970 /* ActScoreContainer.h */,
-				6383D4FC15487F1500B1F970 /* ActScoreContainer.m */,
 				6383D4FD15487F1500B1F970 /* ActTask.h */,
 				6383D4FE15487F1500B1F970 /* ActTask.m */,
 			);
@@ -225,8 +224,10 @@
 		6383D50D15487F6B00B1F970 /* Character */ = {
 			isa = PBXGroup;
 			children = (
-				6383D50B15487F6100B1F970 /* ActCharacterFile.h */,
-				6383D50C15487F6100B1F970 /* ActCharacterFile.m */,
+				637FC8A51562CF5B002584A9 /* ActCharacter.h */,
+				637FC8A61562CF5B002584A9 /* ActCharacter.m */,
+				6383D4FB15487F1500B1F970 /* ActScoreContainer.h */,
+				6383D4FC15487F1500B1F970 /* ActScoreContainer.m */,
 			);
 			name = Character;
 			sourceTree = "<group>";
@@ -351,6 +352,7 @@
 				6383D52215487FBF00B1F970 /* FromRightReplaceSegue.m in Sources */,
 				6383D52315487FBF00B1F970 /* FromTopReplaceSegue.m in Sources */,
 				6383D534154881F400B1F970 /* GLViewController.m in Sources */,
+				637FC8A71562CF5B002584A9 /* ActCharacter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

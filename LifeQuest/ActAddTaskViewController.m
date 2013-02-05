@@ -33,6 +33,7 @@ BOOL isOneOffTask = NO;
 
 - (void)viewDidLoad
 {
+    //On loading, populate picker view
     [super viewDidLoad];
     NSArray *pickerArrayLoader = [[NSArray alloc] initWithObjects:@"Chores", @"Work",@"Social",@"Self", nil];
     self.pickerArray = pickerArrayLoader;
@@ -43,6 +44,7 @@ BOOL isOneOffTask = NO;
 
 - (void)viewDidUnload
 {
+    //Unload everything
     [self setFrequencyInput:nil];
     [self setTaskNameInput:nil];
     [super viewDidUnload];
@@ -59,6 +61,7 @@ BOOL isOneOffTask = NO;
 }
 
 - (IBAction)done:(id)sender {
+    
     if ([self.taskNameInput.text length]>0 && isOneOffTask == NO) {
         [[self delegate] actAddTaskViewControllerDidFinishTask:self name:self.taskNameInput.text category:[_pickerArray objectAtIndex:[_categoryInput selectedRowInComponent:0]] frequency:_frequencyString];
     }else if([self.taskNameInput.text length]>0 && isOneOffTask == YES){

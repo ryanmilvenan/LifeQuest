@@ -1,14 +1,16 @@
 //
-//  ActCharacterFile.h
-//  Actualizer
+//  ActCharacter.h
+//  LifeQuest
 //
-//  Created by Ryan Milvenan on 4/18/12.
+//  Created by Ryan Milvenan on 5/15/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface ActCharacterFile : NSObject
+@interface ActCharacter : NSObject
+
+@property(nonatomic, strong)NSArray *scoreDump;
 
 @property(nonatomic,strong)NSNumber *masterLvl;
 @property(nonatomic,strong)NSNumber *choreLvl;

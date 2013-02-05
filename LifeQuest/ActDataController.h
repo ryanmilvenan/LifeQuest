@@ -29,6 +29,8 @@
 
 -(void)scoreOfList;
 
+-(NSNumber *)getScoreOfList;
+
 -(ActTask *)objectInListAtIndex:(int)array index:(NSUInteger)theIndex;
 
 -(void)addTaskWithName:(NSString *)inputName category:(NSString *)inputCategory frequency:(NSString *)inputFrequency score:(NSNumber *)inputScore dimRtnVal:(NSNumber *)inputDimRtnVal date:(NSDate *)inputDate;
